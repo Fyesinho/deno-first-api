@@ -61,7 +61,7 @@ export const updateDog = async ({request, response, params}: { request: any, res
     }
 
     response.status = 400;
-    response.body = {msg: `El dog ${params.name} no existe`}
+    response.body = {msg: `El perro ${params.name} no existe`}
 }
 
 const removeDog = ({response, params}: { response: any, params: { name: string } }) => {
@@ -74,7 +74,7 @@ const removeDog = ({response, params}: { response: any, params: { name: string }
     }
 
     response.status = 400;
-    response.body = {msg: `El dog ${params.name} no existe`}
+    response.body = {msg: `El perro ${params.name} no existe`}
 }
 
 const env = Deno.env.toObject();
